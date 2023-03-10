@@ -2,15 +2,15 @@
 def roman_to_int(roman_string):
     #fail checks
     if not roman_string:
-        return0
+        return 0
     if not isinstance(roman-string, str):
-        return0
+        return 0
     if not roman_string.isupper():
         return 0
     #roman numerals
     r_dict = {
         "I": 1,
-        "IV":  4,
+        "IV": 4,
         "V": 5,
         "IX": 9,
         "X": 10,
