@@ -36,7 +36,7 @@ def roman_to_int(roman_string):
                         temp[idx:idx + 2] = [''.join(temp[idx:idx + 2])]
             except IndexError:
                 pass
-                idx += 1
+            idx += 1
 
     for k, v in r_dict.items():
         for index in temp:
