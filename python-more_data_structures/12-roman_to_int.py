@@ -33,7 +33,7 @@ def roman_to_int(roman_string):
                 pass
             try:
                 if temp[idx] == 'I' and temp[idx + 1] == 'X':
-                        temp[idx:idx + 2] = [''.join(temp[idx:idx + 2])]
+                    temp[idx:idx + 2] = [''.join(temp[idx:idx + 2])]
             except IndexError:
                 pass
             idx += 1
