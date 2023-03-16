@@ -1,16 +1,14 @@
 #!/usr/bin/python3
-"""This module creates an empty class named Square"""
+"""This module creates a class named Square"""
 
 
 class Square:
-    """An empty class
+    """A class named Square
     Attributes:
     attr1 (size): size of square
     """
-
     def__init__(self, size):
         """"
-
         Args:
         size: size for __size attribute of class instance
         """
