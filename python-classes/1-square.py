@@ -3,13 +3,19 @@
 
 
 class Square:
-    """A class named Square
-    Attributes:
-    attr1 (size): size of square
     """
-    def__init__(self, size):
-        """"
+    Square class: defines a square by a private instance attribute size.
+
+    Attributes:
+        __size (int): size of the square.
+
+    """
+    def __init__(self, size):
+        """
+        Initializes a square instance.
+
         Args:
-        size: size for __size attribute of class instance
+            size (int): size of the square.
+
         """
         self.__size = size
