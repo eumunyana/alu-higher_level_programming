@@ -32,4 +32,4 @@ class MyInt(int):
         Returns:
             boolean: True or False
         """
-        return self.__value == other 
+        return self.__value == other
