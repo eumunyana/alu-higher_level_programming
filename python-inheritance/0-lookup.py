@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def lookup(obj):
     """
     This function takes an object as an argument and returns a list of all the
