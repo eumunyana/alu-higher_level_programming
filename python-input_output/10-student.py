@@ -38,4 +38,4 @@ class Student:
                 new_dict[item] = self.__dict__[item]
             except Exception:
                 pass
-        return 
+        return new_dict 
