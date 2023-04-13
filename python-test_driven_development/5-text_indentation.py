@@ -27,7 +27,7 @@ def text_indentation(text):
     idx = 0
     for items in text:
         if items in toCatAfter:
-            text = text[:idx + 1] + text[idx + 1:]
+            text = text[:idx + 1] + '\n\n' + text[idx + 1:]
             idx += 3
         else:
             idx += 1
