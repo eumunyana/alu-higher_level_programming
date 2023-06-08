@@ -1,7 +1,7 @@
 #!/usr/bin/node
 // Replaces the value 12 with 89
 
-const myObjects = {
+const myObject = {
   type: 'object',
   value: 12
 };
