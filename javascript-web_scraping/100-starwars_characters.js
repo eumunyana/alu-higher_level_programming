@@ -1,17 +1,21 @@
 #!/usr/bin/node
 // Script that gets the contents of a webpage and stores it in a file.
 
-const url = process.argv[2];
-const file = process.argv[3];
-const req = require('request');
-const fileStream = require('fs');
-
-req(url, function (error, response, body) {
-  if (error) {
-    console.log(error);
-  } else {
-    fileStream.writeFile(file, body, 'utf-8', (error) => {
-      if (error) console.log(error);
+const request = require('request');
+const endPoint = 'http://swapi-api.hbtn.io/api/films/' + process.argv[2];
+request.get(endPoint, function (err, response, body) {
+  if (err) {
+    throw err;
+  } else if (response.statusCode === 200) {
+    const characters = JSON.parse(body).characters;
+    characters.forEach(character => {
+      request.get(character, function (err, response, body) {
+        if (err) {
+          throw err;
+        } else if (response.statusCode === 200) {
+          console.log(JSON.parse(body).name);
+        }
+      });
     });
   }
 });
